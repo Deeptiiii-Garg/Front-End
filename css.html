@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: My-Counter 0;
+        }
+        h1::before{
+            content: "Part" counter(My-Counter, upper-roman) "-";
+            counter-increment: My-Counter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa laudantium adipisci natus quaerat quis similique, minus possimus exercitationem? Unde tempora cupiditate veritatis laudantium voluptatem cum id nemo libero facere error.</p>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium dolorum similique, asperiores qui maxime sapiente fuga expedita quam aspernatur! Veritatis pariatur a suscipit similique non, asperiores nisi nemo fugiat!</p>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur sint dolorum quis, quidem commodi distinctio? Atque asperiores aliquam harum tempora excepturi suscipit eum vel. Enim tenetur ipsam culpa officia.</p>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit quae. Nostrum, qui impedit aspernatur molestias distinctio quas ratione atque, vel non, officia ea exercitationem iure? Quas placeat esse earum!</p>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, neque quaerat reiciendis doloribus provident dolore, veniam ut dolor reprehenderit praesentium sint repudiandae maiores ad dolores amet a nobis ex illum?</p>
+</body>
+</html>

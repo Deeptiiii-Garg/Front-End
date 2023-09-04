@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+        }
+        .border{
+            font-size: 10px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            /* border-top: 1px solid white;
+            position: relative;
+            border-bottom: 2px solid white; */
+        }
+        .circle{
+            position: relative;
+            display: flex;
+            top: 0px;
+            left: 550px;
+            width: 100px;
+            height: 100px;
+            background: rgb(204, 204, 255);
+            border-radius: 50%;
+            margin: 100px;
+            animation: circle 1ss infinite linear;
+            box-shadow: 0 0 1rem #EAE4E4;
+ ;
+        }
+        @keyframes circle{
+            0%{
+                transform: rotate(0deg)
+                translateY(100px) rotate(0deg) ;
+            }
+            100%{
+                transform: rotate(360deg)
+                translateY(100px) rotate(-360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="border">
+    <div class="circle"></div>
+</div>
+</body>
+</html>

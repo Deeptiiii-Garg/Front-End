@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .date{
+            width: 100%;
+        }
+        tr{
+            width: 100%;
+        }
+       
+       td select{
+        width: 100%;
+       }
+       body{
+        background: rgb(168, 215, 237);
+       }
+       table{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       div{
+        background: rgb(184, 150, 150);
+        padding: 20px 0;
+        margin: 0 400px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>New Guest Entry</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Reg No.</td>
+                <td>Invoive No.</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="text"></td>
+                <td><input type="text" name="text" placeholder="E-0000001"></td>
+            </tr>
+            <tr>
+                <td>Check In</td>
+                <td>Expected Check Out</td>
+            </tr>
+            <tr>
+                <td><input type="date" name="date" class="date" ></td>
+                <td><input type="date" name="date" class="date"></td>
+            </tr>
+            <tr>
+                <td>Room type</td>
+                <td>Meal Plan</td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="" disabled selected>Select the type</option>
+                        <option value="">Single Bed</option>
+                        <option value="">Double Bed</option>
+                        <option value="">Deluxe Room</option>
+                </select>
+            </td>
+                <td>
+                    <select>
+                        <option value="" disabled selected>Select the Plan</option>
+                        <option value="">Breakfast</option>
+                        <option value="">Lunch</option>
+                        <option value="">Dinner</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Room Number</td>
+                <td>Guest Basis</td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="" disabled selected>Choose.</option>
+                        <option value="">124</option>
+                        <option value="">224</option>
+                        <option value="">324</option>
+                        <option value="">424</option>
+                        <option value="">524</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="" disabled selected>Direct Booking</option>
+                        <option value="">Online Booking</option>
+                        <option value="">FT(By Agent)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Guest Type</td>
+                <td>Bill To</td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="">Tourist</option>
+                        <option value="">Foreginer</option>
+                    </select>
+                </td>
+                <td><input class="radio" type="radio" name="radio">Customer <input type="radio" name="radio">Company</td>
+            </tr>
+            <tr>
+                <td>Company Name</td>
+                <td>Full Name</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" placeholder="Company Name"></td>
+                <td><input type="text" name="name" placeholder="Enter Full Name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Mobile No.</td>
+            </tr>
+            <tr>
+                <td><input type="Email" name="Email" placeholder="Email"></td>
+                <td><input type="number" name="number" placeholder="Mobile No."></td>
+            </tr>
+            <tr>
+                <td>WP/NID</td>
+                <td>Passport No.</td>
+            </tr>
+            <tr>
+            <td><input type="text" name="text"></td>
+            <td><input type="text" name="text"></td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td>Country Residence</td>
+            </tr>
+            <tr>
+                <td><select>
+                    <option value="" disabled selected>~Select One~</option>
+                    <option value="">Indian</option>
+                    <option value="">Bangladeshi</option>
+                    <option value="">Afghani</option>
+                </select></td>
+                <td>
+                    <select>
+                        <option value="" disabled selected>~Select One~</option>
+                        <option value="">India</option>
+                        <option value="">Pakistan</option>
+                        <option value="">America</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td>Profession</td>
+            </tr>
+            <tr>
+                <td><input class="date" type="date" name="dob"></td>
+                <td>
+                    <input type="text" name="text">
+                </td>
+            </tr>
+            <tr>
+                <td>No. of Pax</td>
+                <td>Group</td>
+            </tr>
+            <tr>
+                <td><input type="number" name="people" value="1"></td>
+                <td><select>
+                    <option value="">No</option>
+                    <option value="">Yes</option>
+                </select></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
